@@ -13,7 +13,7 @@ app.use(express.static("../pages"));
 app.use(bodyParser.urlencoded({ extended: true }));
 const secret ='my-secret-key'
 let users=[]
-app.get('/',async(req,res)=>{
+app.get('/product',(req,res)=>{
   res.send('hhhh')
 })
 app.post('/register',async(req,res)=>{
